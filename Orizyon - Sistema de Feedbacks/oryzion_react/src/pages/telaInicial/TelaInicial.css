@@ -1,0 +1,100 @@
+/* ==============================
+   Layout Geral
+============================== */
+
+.telaInicial {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 638px;
+}
+
+/* ==============================
+   Título
+============================== */
+
+.tituloTela {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.tituloTela h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0b1e4a;
+}
+
+.nome-destaque {
+  color: #5b6dff;
+}
+
+.tituloTela p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ==============================
+   Cards estilo imagem
+============================== */
+
+.cards-container {
+  display: flex;
+  justify-content: center; /* 👉 centraliza horizontal */
+  align-items: center; /* 👉 centraliza vertical */
+  gap: 80px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-acesso {
+  background-color: #0d1628;
+  border-radius: 18px;
+  padding: 35px 40px;
+  width: 420px;
+  cursor: pointer;
+  border: 3px solid #5b6dff; /* borda azul igual imagem */
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-acesso h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-acesso p {
+  font-size: 0.95rem;
+  color: #d8d8d8;
+}
+
+.card-acesso:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ==============================
+   Responsividade
+============================== */
+
+@media (max-width: 768px) {
+  .tituloTela h1 {
+    font-size: 2.2rem;
+  }
+
+  .cards-container {
+    gap: 40px;
+  }
+
+  .card-acesso {
+    width: 90%;
+  }
+}

@@ -1,0 +1,16 @@
+.voltar a{
+    /* 1. Remove a cor de fundo */
+    background-color: transparent; 
+    
+    /* 2. Remove a borda padrão do navegador */
+    border: none;
+    
+    /* Opcional: Adiciona o cursor de 'mãozinha' para indicar que é clicável */
+    cursor: pointer; 
+    
+    /* Opcional: Se for um ícone, ajuste o preenchimento (padding) */
+    padding: 0; 
+
+    color: #040F1E;
+    font-weight: 700;
+}

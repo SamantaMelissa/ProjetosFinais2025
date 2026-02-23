@@ -1,0 +1,139 @@
+.form_anuncio {
+    /* height: calc(100vh - 150px); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botoes{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+
+    gap: 20px;
+}
+
+.botao_azul{
+    background-color: #003a80;   /* azul escuro */
+    color: white;                /* texto branco */
+    padding: 10px 28px;          /* tamanho do botão */
+    border: none;                /* remove borda */
+    border-radius: 10px;         /* cantos arredondados */
+    font-weight: 600;            /* texto levemente forte */
+    font-size: 13px;             /* tamanho da fonte */
+    cursor: pointer;             /* mãozinha */
+    letter-spacing: 1px;         /* igual ao modelo */
+    text-transform: uppercase;   /* SALVAR */
+}
+
+.main_anuncio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_anuncio h1{
+    color: var(--cor-texto);
+    margin: 50px;
+}
+
+/* config do forms */
+.form-container {
+    background: #d9d9d9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+.label {
+    color: var(--cor-texto);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Inputs */
+.input {
+    width: 350px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.tv-input {
+    width: 350px; 
+    height: 40px;
+}
+
+/* Linha flex */
+.linha {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Upload */
+.upload-box {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.thumb-icon {
+    width: 30px;
+}
+
+/* Pré-visualização */
+.preview-box {
+    width: 360px;
+    height: 150px;
+    border-radius: 12px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(90deg, #ff6a00, #00208e);
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.preview-text {
+    font-size: 20px;
+    z-index: 2;
+}

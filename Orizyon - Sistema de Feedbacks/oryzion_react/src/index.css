@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+}
+
+
+@media screen and (max-width: 600px) {
+  .layout_grid {
+        /* Opcional: Aumenta a largura em telas pequenas */
+        max-width: 95%; 
+        
+        /* MUDA O LAYOUT PARA UMA ÚNICA COLUNA (Empilhamento) */
+        grid-template-columns: 1fr; 
+        
+        /* Opcional: Ajusta o espaçamento */
+        gap: 10px;
+    }
+}   

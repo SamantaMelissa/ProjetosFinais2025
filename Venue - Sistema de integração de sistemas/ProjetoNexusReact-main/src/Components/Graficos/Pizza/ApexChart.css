@@ -1,0 +1,17 @@
+.grafico-card-modern {
+  max-width: 100%;       /* aumenta o card */
+  width: 100%;             /* ocupa quase toda a tela em desktop */
+  margin: 30px auto;
+  background: #1e1e1e; 
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.grafico-card-modern:hover {
+  transform: translateY(-5px);
+}

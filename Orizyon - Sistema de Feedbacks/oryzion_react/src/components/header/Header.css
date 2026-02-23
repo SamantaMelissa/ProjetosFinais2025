@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+header {
+  background-color: #111828;
+  width: 100%;
+  box-shadow:
+    0px 6px 15px rgba(0, 0, 0, 0.35),
+    0px 6px 20px rgba(0, 0, 0, 0.25);
+  position: fixed;      /* ⬅️ aqui! */
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+
+
+.header_header {
+  display: flex;
+  padding: 12px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo_header img {
+  height: 30px;
+}
+
+header,
+.header_header,
+.link_header,
+.usuario,
+.header_pefil h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; /* Light */
+}
+
+
+.logo_header {
+  display: flex;
+}
+
+ul p{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+
+.header_pefil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;        /* ⬅️ Centraliza verticalmente */
+  justify-content: center;
+  color: white;
+}
+
+.header_pefil h3 {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 13px;            /* ⬅️ Um pouco maior */
+  line-height: 1;             /* ⬅️ Remove altura extra */
+  display: flex;
+  align-items: center;        /* ⬅️ Centraliza verticalmente */
+  height: 36px;               /* ⬅️ Igual à imagem */
+}
+
+.header_pefil img {
+  height: 32px;               /* ⬅️ Um pouco maior */
+  width: 32px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.usuario {
+  text-decoration: none;
+  color: white;
+}
+
+.link_header {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight:100;
+}
+
+.link_header:hover {
+  opacity: 0.7;
+}
+
+.header_header li {
+  letter-spacing: 1px;
+  margin-left: 32px;
+  list-style: none;
+}
+
+.header_header ul {
+  display: flex;
+  align-items: center;
+}
+
+/* --- MENU MOBILE --- */
+.mobile_menu div {
+  width: 32px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px;
+  transition: 0.3s;
+}
+
+.mobile_menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* --- Responsividade --- */
+@media screen and (max-width: 999px) {
+  /* Esconde elementos do desktop */
+  .header_header ul {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .header_pefil {
+    display: none;
+  }
+
+  /* menu ativo */
+  .nav_list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 70vw;
+    height: calc(100vh - 90px);
+    background: #040F1E;
+    z-index: 999;
+    align-items: center;
+    justify-content: start;
+    padding-top: 40px;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Topo do menu mobile (ícone + nome) */
+  .menu_mobile_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .menu_mobile_topo img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .menu_mobile_topo h3 {
+    color: white;
+    font-weight: 400;
+  }
+
+  .botao_sair_mobile {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Animação do hambúrguer */
+  .mobile_menu.active .line1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
+  }
+
+  .mobile_menu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobile_menu.active .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+}
+
+/* --- Desktop: esconde o ícone do menu --- */
+@media screen and (min-width: 1000px) {
+  .nav_list img[alt="Ícone de perfil"],
+  .botao_sair_mobile {
+    display: none;
+  }
+}

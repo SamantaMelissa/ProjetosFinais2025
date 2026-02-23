@@ -1,0 +1,127 @@
+
+.home-adm {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(145deg, rgba(36,0,70,0.95), rgba(100,0,150,0.85));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+}
+
+
+.home-adm h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(182,80,229,0.5);
+}
+
+
+.lista-funcionarios {
+    width: 95%;
+    max-width: 1200px;
+    background: rgba(182,80,229,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+}
+
+
+.lista-funcionarios p {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 1rem;
+}
+
+
+.lista-funcionarios table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+
+.lista-funcionarios th {
+    background: rgba(182,80,229,0.15);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.lista-funcionarios td {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.lista-funcionarios tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+}
+
+
+.lista-funcionarios img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(255,255,255,0.2);
+}
+
+
+.lista-funcionarios tr:hover {
+    background: rgba(182,80,229,0.15);
+    transition: background 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .home-adm h1 {
+        font-size: 1.8rem;
+    }
+
+    .lista-funcionarios {
+        padding: 20px;
+    }
+
+    .lista-funcionarios table {
+        font-size: 0.85rem;
+    }
+
+    .lista-funcionarios img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-adm h1 {
+        font-size: 1.5rem;
+    }
+
+    .lista-funcionarios {
+        padding: 15px;
+    }
+
+    .lista-funcionarios table,
+    .lista-funcionarios th,
+    .lista-funcionarios td {
+        font-size: 0.8rem;
+    }
+
+    .lista-funcionarios img {
+        width: 40px;
+        height: 40px;
+    }
+}

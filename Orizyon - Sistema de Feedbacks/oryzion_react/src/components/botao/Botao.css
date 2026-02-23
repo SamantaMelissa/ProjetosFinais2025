@@ -1,0 +1,18 @@
+.botaoGeral {
+    width: 180px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 200;
+    background-color: #040F1E;
+
+    color: white;
+    font-size: 19px;
+}
+
+.botaoGeral:hover {
+    border: 2px solid #040F1E;
+    background-color: white;
+    color: #040F1E;
+    transition: all 0.2s ease-in-out; 
+}

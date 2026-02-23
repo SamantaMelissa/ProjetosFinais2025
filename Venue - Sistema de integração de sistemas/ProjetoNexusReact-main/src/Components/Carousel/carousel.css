@@ -1,0 +1,100 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 20px;
+  border-radius: 10px;
+  gap: 15px;
+  width: 700px;
+  background-color: transparent;
+  padding-left: 20px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 550px;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 20%;
+  padding: 5px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.08);
+}
+
+/* ---- Setas ---- */
+.arrow {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: #e0e0e0;
+}
+
+.seta-img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- Animações ---- */
+.slide-next {
+  animation: slideLeft 0.5s ease;
+}
+
+.slide-prev {
+  animation: slideRight 0.5s ease;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

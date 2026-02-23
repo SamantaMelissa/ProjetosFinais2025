@@ -1,0 +1,239 @@
+/* * =================== CONTAINERS PRINCIPAIS =================== */ */
+
+.FerramentasExemplo {
+  height: 120px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.quadrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 420px;
+  background-color: #4b4b4ba1;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.Janela_Gestor {
+  height: 830px;
+  width: 1380px;
+  border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* =================== ÁREA DE GRÁFICOS =================== */
+
+.grafico {
+  width: 700px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.FerramentasGrafico {
+  height: 786.71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin-top: -20px;
+}
+
+/* =================== FERRAMENTAS =================== */
+
+.ferramentas {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin: 0 -60px;
+}
+
+.Marketing {
+  font-size: 2.2em;
+  line-height: 1.1;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.Ferramenta {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.Ferramenta:hover {
+  transform: scale(1.05);
+}
+
+.carrosel_ferramentas {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+/* =================== LISTAGENS E TABELAS =================== */
+
+.Topicos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.Editar,
+.Cargos,
+.Nomes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.ListaFunc {
+  margin-top: 20px;
+}
+
+.BotaoEditar {
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.LDE {
+  color: white;
+}
+
+/* =================== JANELA DE MARKETING =================== */
+
+.janelaMarketing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backgroundImagemM {
+  background-image: url("data:image/svg+xml,%3csvg%20width='1580'%20height='1704'%20viewBox='0%200%201580%201704'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_786_21)'%3e%3crect%20width='1580'%20height='1704'%20fill='black'/%3e%3cg%20filter='url(%23filter0_f_786_21)'%3e%3cellipse%20cx='178'%20cy='1213'%20rx='284'%20ry='281'%20fill='url(%23paint0_linear_786_21)'/%3e%3c/g%3e%3cg%20filter='url(%23filter1_f_786_21)'%3e%3cellipse%20cx='1450'%20cy='555'%20rx='284'%20ry='281'%20fill='url(%23paint1_linear_786_21)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_786_21'%20x='-356'%20y='682'%20width='1068'%20height='1062'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='125'%20result='effect1_foregroundBlur_786_21'/%3e%3c/filter%3e%3cfilter%20id='filter1_f_786_21'%20x='916'%20y='24'%20width='1068'%20height='1062'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='125'%20result='effect1_foregroundBlur_786_21'/%3e%3c/filter%3e%3clinearGradient%20id='paint0_linear_786_21'%20x1='178'%20y1='932'%20x2='178'%20y2='1494'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.0865385'%20stop-color='%235170FF'/%3e%3cstop%20offset='0.5'%20stop-color='%23B13D7E'/%3e%3cstop%20offset='0.879808'%20stop-color='%23562984'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_786_21'%20x1='1450'%20y1='274'%20x2='1450'%20y2='836'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.0865385'%20stop-color='%235170FF'/%3e%3cstop%20offset='0.5'%20stop-color='%23B13D7E'/%3e%3cstop%20offset='0.879808'%20stop-color='%23562984'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_786_21'%3e%3crect%20width='1580'%20height='1704'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  height: 970px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carrossel {
+    background-color: #1c1c1c;
+    width: 140px;
+    height: 420px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+/* modalBackground */
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* modalContainer */
+.modalContainer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: slideDown 0.3s ease-out;
+}
+
+/* animação do modal */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* inputs dentro do modal */
+.modalContainer input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* botões do modal */
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modalButtons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.modalButtons button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modalButtons button:first-child:hover {
+  background-color: #218838;
+}
+
+.modalButtons button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.modalButtons button:last-child:hover {
+  background-color: #c82333;
+}

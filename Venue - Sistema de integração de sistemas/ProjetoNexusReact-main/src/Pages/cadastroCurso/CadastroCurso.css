@@ -1,0 +1,177 @@
+main.boa {
+  display: flex;
+  justify-content: center;
+}
+
+.Janela_CadastroCurso {
+  border-radius: 8px;
+  border: 0.5px solid rgba(85, 26, 148, 0.05);
+  background: rgba(182, 80, 229, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.40) inset, 0 -2px 4px 0 rgba(0, 0, 0, 0.20) inset;
+  backdrop-filter: blur(5px);
+  height: auto;
+  width: 900px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagem */
+.IMAGEMM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+}
+
+.ImagemCurso {
+  width: 455px;
+  height: 304px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px dashed rgba(150, 150, 150, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImagemCurso:hover {
+  border-color: #b650e5;
+}
+
+.TextoEscolher {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Inputs */
+.BlocoInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 80%;
+}
+
+.Campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.LabelCurso {
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+}
+
+.InputCurso,
+.InputDescricao {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.InputCurso:focus,
+.InputDescricao:focus {
+  border-color: #b650e5;
+  box-shadow: 0 0 5px rgba(182, 80, 229, 0.3);
+}
+
+.InputCurso {
+  height: 40px;
+}
+
+.InputDescricao {
+  resize: none;
+}
+
+.Cour {
+  color: white;
+}
+
+.ArrumarNomeEscolher {
+  width: 456px;
+}
+
+.Criar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.tamanhoBotaocriar {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  background: rgb(255 255 255);
+  color: #700099;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tamanhoBotaocriar:hover {
+  background: #b650e5;
+  color: white;
+}
+
+/* 📱 RESPONSIVIDADE (até 480px) */
+@media (max-width: 480px) {
+  .Janela_CadastroCurso {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ArrumarNomeEscolher {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ImagemCurso {
+    width: 100%;
+    height: 200px;
+  }
+
+  .BlocoInputs {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .LabelCurso {
+    font-size: 14px;
+  }
+
+  .InputCurso,
+  .InputDescricao {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .TextoEscolher {
+    font-size: 12px;
+  }
+
+  .Criar {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .tamanhoBotaocriar {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+  }
+}

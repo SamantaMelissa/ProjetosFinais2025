@@ -1,0 +1,13 @@
+.header_login{
+    background: linear-gradient(90deg, #001f9e 0%, #002bce 30%, #9e3f17 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+}
+
+.logo_login{ 
+    width: 250px;
+}

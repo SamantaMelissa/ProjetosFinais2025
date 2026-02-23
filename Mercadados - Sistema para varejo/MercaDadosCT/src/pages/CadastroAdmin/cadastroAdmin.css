@@ -1,0 +1,151 @@
+/* === Escopo exclusivo para a página de CadastroAdmin === */
+.cadastro-admin-page {
+  display: flex;
+  background-color: #0E1A3D;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* === Retângulo azul lateral (substitui o MenuLateral) === */
+.cadastro-admin-page .menu-lateral-retangulo {
+  width: 220px;
+  background-color: #0b1c3a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Logo dentro do retângulo */
+.cadastro-admin-page .menu-lateral-retangulo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* === Conteúdo principal === */
+.cadastro-admin-page .conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 220px;
+  padding-bottom: 2rem;
+}
+
+/* === Caixa do formulário === */
+.cadastro-admin-page .formulario-box-adminlogin {
+  background-color: #0E1A3D;
+  border: 2.9px solid #F97316;
+  border-radius: 57px;
+  padding: 48px 40px;
+  width: 730px;
+margin-top: 38px;
+margin-left: 13%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  box-sizing: border-box;
+}
+
+.cadastro-admin-page .formulario-box-adminlogin:hover {
+  transform: translateY(-3px);
+}
+
+/* === Título === */
+.cadastro-admin-page .formulario-box-adminlogin h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* === Grid dos inputs === */
+.cadastro-admin-page .formulario-grid-adm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+}
+
+.cadastro-admin-page .formulario-grid-adm input::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+/* === Campos de entrada === */
+.cadastro-admin-page .formulario-grid-adm input,
+.cadastro-admin-page .formulario-grid-adm select {
+  padding: 0.8rem 1rem;
+  border: 1px solid #d0d7eb;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  background-color: #f8faff;
+  color: #333;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.cadastro-admin-page .formulario-grid-adm input:focus,
+.cadastro-admin-page .formulario-grid-adm select:focus {
+  border-color: #ff6600;
+  background-color: #fff;
+}
+
+/* Campos que devem ocupar toda a linha */
+.cadastro-admin-page .formulario-grid-adm input[name="senha"],
+.cadastro-admin-page .formulario-grid-adm input[name="cpf"] {
+  grid-column: span 2;
+}
+
+
+/* === Botão === */
+.cadastro-admin-page .botao-container {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.cadastro-admin-page .botao-container button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.9rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cadastro-admin-page .botao-container button:hover {
+  background-color: #e05500;
+  transform: scale(1.03);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .cadastro-admin-page .menu-lateral-retangulo {
+    width: 70px;
+  }
+
+  .cadastro-admin-page .conteudo-principal {
+    margin-left: 70px;
+  }
+
+  .cadastro-admin-page .formulario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cadastro-admin-page .formulario-box {
+    padding: 2rem;
+  }
+
+  .cadastro-admin-page .menu-lateral-retangulo img {
+    width: 60px;
+  }
+}

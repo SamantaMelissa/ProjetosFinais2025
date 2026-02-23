@@ -1,0 +1,39 @@
+.modal-botao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+}
+
+.modal-conteudo {
+  background: white;
+  color: black;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.profile-icon {
+  font-size: 40px;
+}
+
+.modal-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}

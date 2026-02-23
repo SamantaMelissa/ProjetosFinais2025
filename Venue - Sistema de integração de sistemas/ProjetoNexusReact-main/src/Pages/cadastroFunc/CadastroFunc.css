@@ -1,0 +1,126 @@
+/* Fundo geral */
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(162deg, #0C0414 12%, #1B092E 27%, #220C39 68%, #40156B 86%);
+}
+
+/* Card */
+.cadastro-card {
+    padding: 40px 50px;
+    max-width: 850px;
+    width: 100%;
+    border-radius: 16px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+/* Título */
+.cadastro-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Grid do formulário */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+/* Inputs e selects com glassmorphism */
+.field input, .field select {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    transition: border 0.2s, background 0.2s;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+
+.field input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.field input:focus,
+.field select:focus {
+    outline: none;
+    border-color: #b650e5;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Options do select */
+.field select option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+/* Botão */
+.actions {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: rgba(182, 80, 229, 0.8);
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 70px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    max-width: 366px;
+}
+
+.btn-primary:hover {
+    background: rgba(182, 80, 229, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(182, 80, 229, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-card {
+        padding: 25px 20px;
+        max-width: 425px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        border-radius: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Cor do título */
+.CorT {
+    color: white;
+}

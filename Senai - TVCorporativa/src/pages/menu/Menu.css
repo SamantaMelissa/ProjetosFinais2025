@@ -1,0 +1,28 @@
+.main_menu{
+    height: calc(100vh - 150px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.botao_menu{
+    background-color: #c94900;   /* laranja queimado */
+    color: white;                /* texto branco */
+    padding: 12px 28px;          /* espaçamento interno */
+    border: none;                /* remove a borda padrão */
+    border-radius: 10px;         /* cantos arredondados */
+    font-weight: 600;            /* texto mais forte */
+    font-size: 14px;             /* tamanho do texto */
+    cursor: pointer;             /* cursor de botão */
+    letter-spacing: 1px;         /* levemente espaçado */
+    text-transform: uppercase;   /* tudo maiúsculo */
+    text-decoration: none;
+}
+
+.botao_menu:hover{
+    background-color: #b34000;
+}

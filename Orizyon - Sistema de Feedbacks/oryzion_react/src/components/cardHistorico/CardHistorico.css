@@ -1,0 +1,208 @@
+.listagem_historico {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 80%;
+  color: #1a1a1a;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.listagem_historico:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+.coluna_esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.usuario_caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icone_usuario {
+  text-align: center;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+}
+
+.apelido {
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+}
+
+.coluna_central {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info_bloco {
+  background-color: #e9eef7;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 230px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.info_bloco:hover {
+  background-color: #dce3f0;
+}
+
+.comportamento {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 0;
+  margin-top: 10px;
+}
+
+.comportamento h4 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.comportamento p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.botao_responda {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* deixa o botão mais destacado */
+.botao_responda button {
+  width: 220px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.botao_responda button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .listagem_historico {
+    width: 95%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coluna_esquerda {
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .coluna_central {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .info_bloco {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  .listagem_historico {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .coluna_esquerda {
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .usuario_caracteristicas {
+    gap: 10px;
+  }
+
+  .info_bloco {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .comportamento {
+    padding: 25px 0;
+    font-size: 13px;
+  }
+
+  .comportamento h4 {
+    font-size: 15px;
+  }
+
+  .botao_responda button {
+    width: 200px;
+    height: 42px;
+    font-size: 15px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .coluna_esquerda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_bloco {
+    font-size: 12px;
+  }
+
+  .nome {
+    font-size: 12px;
+  }
+
+  .apelido {
+    font-size: 11px;
+  }
+
+  .botao_responda button {
+    width: 180px;
+    height: 40px;
+  }
+}

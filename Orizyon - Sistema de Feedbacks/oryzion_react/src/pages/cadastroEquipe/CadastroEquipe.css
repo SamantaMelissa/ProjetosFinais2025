@@ -1,0 +1,160 @@
+/* ===== Fundo e Container ===== */
+.cadastro_container {
+    min-height: 100vh;
+    background-color: #040F1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(135deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%),
+        linear-gradient(45deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%);
+}
+
+/* Bordas decorativas iguais do Login */
+.cadastro_container::before,
+.cadastro_container::after {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background-color: #313D65;
+}
+
+.cadastro_container::before {
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 250px;
+    background: repeating-linear-gradient(45deg,
+            transparent, transparent 10px,
+            #313D65 10px, #313D65 11px),
+        repeating-linear-gradient(-45deg,
+            transparent, transparent 10px,
+            #313D65 10px, #313D65 11px);
+    background-size: 20px 20px;
+    transform: skewX(-20deg) translateX(50px);
+}
+
+.cadastro_container::after {
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background: repeating-linear-gradient(-45deg,
+            transparent, transparent 10px,
+            #313D65 10px, #313D65 11px),
+        repeating-linear-gradient(45deg,
+            transparent, transparent 10px,
+            #313D65 10px, #313D65 11px);
+    background-size: 20px 20px;
+    transform: skewX(20deg) translateX(-50px);
+}
+
+/* ===== Caixa do Form ===== */
+.cadastro_form_box {
+    border: solid 3px #313D65;
+    padding: 50px 60px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 650px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.cadastro_voltar {
+    margin-bottom: 20px;
+}
+
+/* ===== Form ===== */
+.cadastro_form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ===== Título ===== */
+.cadastro_titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 28px;
+}
+
+.cadastro_titulo strong {
+    font-weight: 300;
+    opacity: .8;
+    display: block;
+    font-size: 18px;
+}
+
+/* ===== Campos ===== */
+.cadastro_campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro_campo label {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.cadastro_campo input {
+    padding: 12px 14px;
+    border: 2px solid #313D65;
+    border-radius: 6px;
+    outline: none;
+    background-color: #040F1E;
+    color: white;
+    transition: border 0.2s;
+}
+
+.cadastro_campo input:focus {
+    border-color: #fff;
+}
+
+/* ===== Olho da Senha ===== */
+.cadastro_senha_container {
+    position: relative;
+}
+
+.cadastro_senha_container input {
+    width: 100%;
+}
+
+.cadastro_icone_olho {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ffffffa4;
+    transition: 0.2s;
+}
+
+.cadastro_icone_olho:hover {
+    color: #ffffff;
+}
+
+/* ===== Botão ===== */
+.cadastro_botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cadastro_botao button {
+    width: 100%;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+    .cadastro_form_box {
+        padding: 35px 25px;
+    }
+}

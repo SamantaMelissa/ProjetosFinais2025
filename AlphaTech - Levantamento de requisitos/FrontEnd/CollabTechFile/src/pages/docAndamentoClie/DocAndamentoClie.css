@@ -1,0 +1,7 @@
+.comentarioDisplay {
+    transition: 0.4s;
+}
+
+.comentarioDisplay:hover {
+    transform: scale(1.01);
+}

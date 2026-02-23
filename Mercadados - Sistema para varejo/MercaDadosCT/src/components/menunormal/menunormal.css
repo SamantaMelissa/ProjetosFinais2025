@@ -1,0 +1,55 @@
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0E1A3D;
+  border-bottom: 2px solid #162A63;
+  padding: 12px 24px;
+  height: 64px;
+  width: 100%;
+  box-sizing: border-box;
+
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+
+/* Ícones no canto direito (só o perfil por enquanto) */
+.icons-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Ícone do perfil */
+.Usuario-perfil {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.Usuario-perfil:hover {
+  transform: scale(1.15);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .top-header {
+    padding: 10px 16px;
+      position: fixed;
+  }
+
+  .Usuario-perfil {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Usuario-perfil {
+    width: 30px;
+    height: 30px;
+  }
+}

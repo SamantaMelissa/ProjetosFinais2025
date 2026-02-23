@@ -1,0 +1,380 @@
+/* ================= CONTAINER ================= */
+.container_cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #040F1E;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%),
+    linear-gradient(45deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container_cadastro::before,
+.container_cadastro::after {
+  content: '';
+  position: absolute;
+  opacity: 0.3;
+  background-color: #313D65;
+}
+
+.container_cadastro::before {
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 250px;
+  background: repeating-linear-gradient(45deg,
+      transparent,
+      transparent 10px,
+      #313D65 10px,
+      #313D65 11px
+    ),
+    repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 10px,
+      #313D65 10px,
+      #313D65 11px
+    );
+  background-size: 20px 20px;
+  transform: skewX(-20deg) translateX(50px);
+  transform-origin: top right;
+}
+
+.container_cadastro::after {
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  background: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 10px,
+      #313D65 10px,
+      #313D65 11px
+    ),
+    repeating-linear-gradient(45deg,
+      transparent,
+      transparent 10px,
+      #313D65 10px,
+      #313D65 11px
+    );
+  background-size: 20px 20px;
+  transform: skewX(20deg) translateX(-50px);
+  transform-origin: bottom left;
+}
+
+/* ================= FORM ================= */
+.form_cadastro {
+  border: solid 3px #313D65;
+  padding: 50px 60px;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+}
+
+/* Botão modo rápido */
+.form_cadastro > div:first-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn_modo_rapido {
+  background-color: #313D65;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn_modo_rapido:hover {
+  background-color: #fff;
+  color: #313D65;
+  border: 1px solid #313D65;
+  transform: translateY(-2px);
+}
+
+/* ================= GRID DE CAMPOS ================= */
+.grid_campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+  margin-bottom: 25px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  padding: 10px 14px;
+  border: 2px solid #313D65;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border 0.2s ease, background 0.2s ease;
+  background-color: #040F1E;
+  color: #f8fafc;
+  margin-top: 5px;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: #00ffa6;
+  background-color: #0b1a33;
+}
+
+/* ================= SENHA ================= */
+.campo_senha {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.campo_senha input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.btn_visibilidade {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* ================= UPLOAD ================= */
+.upload_section {
+  margin: 20px 0;
+}
+
+.upload_area {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload_area.dragging {
+  border-color: #00ffa6;
+  background-color: rgba(0, 255, 166, 0.05);
+}
+
+.upload_label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload_label:hover {
+  background-color: #f8fafc;
+  border-color: #313D65;
+  color: #313D65;
+}
+
+.upload_label p {
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+.upload_label small {
+  color: #94a3b8;
+}
+
+.icone_upload {
+  font-size: 1.5rem;
+}
+
+/* ================= BOTÃO CADASTRAR ================= */
+.btn_cadastrar button {
+  background-color: #313D65;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn_cadastrar button:hover {
+  background-color: #fff;
+  color: #040F1E;
+  border-color: #fff;
+}
+
+/* ================= ALERTS / TOAST ================= */
+.toast-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(30, 30, 30, 0.55);
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.3);
+}
+
+.toast-success {
+  border-left: 5px solid #00ffa6;
+  animation: floatUp 0.6s ease-out;
+}
+
+.toast-error {
+  border-left: 5px solid #ff4c4c;
+  animation: shakeError 0.5s ease-in-out;
+}
+
+.big-alert-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: fadeBG 0.4s ease-out;
+}
+
+.big-alert-box {
+  background: rgba(20, 20, 20, 0.75);
+  padding: 35px 45px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.4);
+  max-width: 420px;
+  animation: zoomInGlow 0.45s ease;
+  color: #d4ffe9;
+  border: 2px solid rgba(0, 255, 170, 0.25);
+}
+
+.big-alert-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0, 255, 160, 0.45);
+}
+
+.big-alert-msg {
+  font-size: 18px;
+  margin-bottom: 22px;
+  opacity: 0.9;
+}
+
+.big-alert-icon {
+  font-size: 55px;
+  margin-bottom: 18px;
+  animation: iconFloat 2s infinite ease-in-out;
+}
+
+.big-success {
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.5);
+  border-color: rgba(0, 255, 150, 0.4);
+}
+
+.big-error {
+  box-shadow: 0 0 25px rgba(255, 80, 80, 0.5);
+  border-color: rgba(255, 80, 80, 0.4);
+}
+
+.big-error .big-alert-title,
+.big-error .big-alert-msg {
+  text-shadow: 0 0 10px rgba(255, 80, 80, 0.4);
+  color: #ffd8d8;
+}
+
+.big-error .big-alert-icon {
+  animation: iconShake 0.6s ease;
+}
+
+/* ================= ANIMAÇÕES ================= */
+@keyframes zoomInGlow {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeBG {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes iconShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes floatUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0px); opacity: 1; }
+}
+
+@keyframes shakeError {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 700px) {
+  .grid_campos {
+    grid-template-columns: 1fr;
+  }
+
+  .form_cadastro {
+    padding: 35px 25px;
+  }
+
+  .btn_modo_rapido {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

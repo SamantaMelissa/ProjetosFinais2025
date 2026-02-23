@@ -1,0 +1,264 @@
+.leitura-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #A3B2DF;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+/* ÁREA AZUL */
+.fundo-azul {
+  background-color: #97aef2;
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.conteudo {
+  display: flex;
+  gap: 3rem;
+}
+
+/* ---------------------------------------- */
+/* PRODUTOS (ESQUERDA) */
+/* ---------------------------------------- */
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  background: #dee5fa;
+  width: 340px;
+  height: 674px;
+  border-radius: 18px;
+  padding: 1rem;
+  align-items: center;
+}
+.h6{
+  color: #000000;
+    font-size: 26px;
+}
+
+.input-busca {
+  margin-top: 10px;
+  width: 90%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  transition: 0.3s;
+  color: #809ffe;
+  background: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.input-busca:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(249,115,22,0.5);
+}
+
+/* LISTA DE BUSCA */
+.resultado-busca {
+  margin-top: 10px;
+  width: 90%;
+  max-height: 450px;
+  background: #fff;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+.item-busca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.item-busca:hover {
+  background: #dfe3ff;
+}
+
+.item-busca img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+
+.tabela {
+  background: #dee5fa;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 715px;
+  height: 676px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.tabela-listagem {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-pagamento, .modal-confirmacao {
+  background-color: #ffffff;
+  width: 700px;
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.titulo-modal {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e2a47;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.opcoes-pagamento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.opcoes-pagamento img {
+  width: 140px;
+  height: 103px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opcoes-pagamento img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-confirmar, .botao-voltar {
+  background-color: #F97316;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 15px;
+  padding: 12px 60px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-confirmar:hover, .botao-voltar:hover {
+  background-color: #e25f05;
+}
+
+.seta-voltar {
+  width: 40px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.seta-voltar:hover {
+  transform: scale(1.1);
+}
+
+.modal-confirmacao h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e2a47;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-confirmacao p {
+  font-size: 20px;
+  color: #000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.check-icon {
+  width: 220px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.tabela-dados {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-dados th,
+.tabela-dados td {
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.produto-pequena-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+
+.botao-lixeira {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.total {
+  background: #1e2a47;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 25px;
+  font-size: 22px;
+}
+
+
+.botao_leitura {
+  background-color: #F97316;
+  border: none;
+  padding: 13px 80px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  align-self: center;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,125 @@
+.carousel-container {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    width: 1170px;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+
+.carousel.slide-prev {
+    width: 1040px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 550px;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide img {
+  width: 80px;
+  height: 80px;
+  background: none;
+  border-radius: 20%;
+  padding: 5px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.08);
+}
+
+/* ---- Setas ---- */
+.arrow {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: #e0e0e0;
+}
+
+.seta-img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- Animações ---- */
+.slide-next {
+  animation: slideLeft 0.5s ease;
+}
+
+.slide-prev {
+  animation: slideRight 0.5s ease;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.Setores {
+    display: flex
+;
+    justify-content: center;
+    padding-right: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    width: 1170px;
+    background-color: transparent;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(85, 26, 148, 0.05);
+    background: rgba(182, 80, 229, 0.05);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.40) inset, 0 -2px 4px 0 rgba(0, 0, 0, 0.20) inset;
+    backdrop-filter: blur(5px);
+    height: 130px;
+    align-items: center;
+}

@@ -1,0 +1,40 @@
+
+
+.page-footer {
+  background-color: #040F1E;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;     /* 🔥 fixa o footer */
+  bottom: 0;           /* cola na parte inferior */
+  left: 0;             /* evita deslocamento */
+  z-index: 999;        /* fica acima do conteúdo */
+}
+
+
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  
+  
+}
+
+footer p {
+  padding: 17px;
+}
+
+.page-footer {
+  margin-top: auto;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 600px) {
+  .page-footer {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+}

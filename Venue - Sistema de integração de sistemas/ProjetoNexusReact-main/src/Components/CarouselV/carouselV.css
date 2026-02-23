@@ -1,0 +1,111 @@
+.carousel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 150px;
+    background-color: transparent;
+    height: 410px;
+}
+
+.carousel-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+}
+
+.slide-vertical {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.slide-vertical.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-vertical img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 20%;
+  padding: 5px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.slide-vertical img:hover {
+  transform: scale(1.08);
+}
+
+/* ---- Setas ---- */
+.arrow {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 45px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover {
+  background-color: #e0e0e0;
+}
+
+.seta-img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Rotação correta das setas */
+.seta-up {
+  transform: rotate(90deg); /* seta esquerda → vira pra cima */
+}
+
+.seta-down {
+  transform: rotate(90deg); /* seta direita → vira pra baixo */
+}
+
+/* ---- Animações ---- */
+.slide-up {
+  animation: slideFromTop 0.6s ease;
+}
+
+.slide-down {
+  animation: slideFromBottom 0.6s ease;
+}
+
+/* Subindo */
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Descendo */
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

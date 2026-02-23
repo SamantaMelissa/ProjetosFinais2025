@@ -1,0 +1,106 @@
+.main_ferramentas {
+    background-image: url(/src/assets/img/BackgroundFerramentas.png);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.titulo_ferramentas {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sessao_ferramentas {
+    /* backdrop-filter: blur(10px); */
+    /* background-color: #74747440; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    /* border-radius: 15px; */
+    margin-bottom: 200px;
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid white; */
+
+    border-radius: 8px;
+    border: 0.5px solid rgba(85, 26, 148, 0.05);
+    background: rgba(182, 80, 229, 0.05);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.40) inset, 0 -2px 4px 0 rgba(0, 0, 0, 0.20) inset;
+    backdrop-filter: blur(5px);
+}
+
+.card_ferramentas {
+    /* background-color: rgba(86, 41, 132, 0.8); */
+    /* border-radius: 15px; */
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 260px;
+    width: 180px;
+    /* border: 2px solid white; */
+
+    border-radius: 8px;
+    border: 0.5px solid rgba(85, 26, 148, 0.05);
+    background: rgba(182, 80, 229, 0.05);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.40) inset, 0 -2px 4px 0 rgba(0, 0, 0, 0.20) inset;
+    backdrop-filter: blur(5px);
+}
+
+.card_ferramentas p {
+    margin-bottom: 20px;
+}
+
+.card_ferramentas img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 130px;
+}
+
+.img_ferramentas {
+    background-image: url(../../assets/img/Ellipse22.svg);
+    /* backdrop-filter: blur(10px); */
+    background-size: 700px;
+    background-position: 1100px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+Footer{
+    margin-top: 0;
+}
+
+.img_ferramentas2 {
+    background-image: url(../../assets/img/Ellipse22.svg);
+    background-size: 670px;
+    background-position: -300px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 300px 0;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}

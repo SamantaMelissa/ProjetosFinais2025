@@ -1,0 +1,164 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+.conteudo-principal-perfil {
+  margin-left: 240px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden; /* remove a barra de rolagem */
+  color: #f97316;
+}
+
+.Perfil-Logo {
+  border: 2.9px solid #f97316;
+  border-radius: 57px;
+  padding: 48px 60px;
+  margin: 42px auto;
+  width: 714px;
+
+  /* Altura reduzida e espaçamento ajustado */
+  /* min-height: 20vh; /* antes estava height: 82% */
+  padding-bottom: 20px; 
+
+  margin-top: 2%;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.25);
+  
+}
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 19px;
+  margin-top: -17px;
+  margin-left: -25px;
+
+}
+
+.Logo-perfil {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.perfil-info h2 {
+  color: #f97316;
+  font-size: 24px;
+  margin: 0;
+}
+
+.perfil-info p {
+  color: #213276;
+  margin: 5px 0 0;
+}
+
+.perfil-dados {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+.campo-perfil {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.campo-perfil label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.campo-perfil input {
+  background-color: transparent;
+  border: 1.5px solid #f97316;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: rgb(38, 41, 52);
+  outline: none;
+  font-size: 14px;
+}
+
+.botoes-perfil {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+
+.btn-editar,
+.btn-senha {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-editar {
+  background-color: #f97316;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #ff861f;
+  transform: scale(1.05);
+}
+
+.btn-senha {
+  background-color: transparent;
+  border: 1.5px solid #f97316;
+  color: #f97316;
+}
+
+.btn-senha:hover {
+  background-color: #f97316;
+  color: white;
+  transform: scale(1.05);
+}
+@media (max-width: 1024px) {
+.conteudo-principal-perfil {
+    margin-left: 2px;
+}
+
+.Perfil-Logo{
+        padding-block-start: 100px;
+margin: 175px auto;
+
+}
+
+}
+
+@media (max-width: 600px) {
+  
+  .Perfil-Logo {
+        margin: 60px auto;
+        width: 95%;
+        padding: 20px 15px;
+        border-radius: 18px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding-block-start: 70px
+    }
+
+  
+}

@@ -1,0 +1,210 @@
+.chat-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* TOPO */
+.chat-header-bar {
+  margin-top: 60px;
+  width: 100%;
+  padding: 16px 40px;
+  background: #1e293b;
+  border-bottom: 1px solid #243247;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.chat-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.chat-back {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.chat-back:hover {
+  color: #94a3b8;
+}
+
+.chat-user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.chat-user-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+/* CORPO */
+.chat-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  gap: 20px;
+}
+
+/* LISTA DE MENSAGENS */
+.chat-mensagens-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CARTÃO DA MENSAGEM */
+.chat-mensagem-card {
+  background: #1e293b;
+  padding: 16px 25px;
+  width: 40%;
+  border-radius: 16px;
+  color: #d1d5db;
+  font-size: 16px;
+  max-width: 70%;
+  border: 1px solid #2b3a52;
+
+  /* ✅ CORREÇÃO CSS: Adiciona posicionamento relativo para o botão flutuar */
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CLIENTE (MENSAGENS RECEBIDAS) -> esquerda */
+.mensagem-cliente {
+  align-self: flex-start;
+  background: #1e293b;
+}
+
+/* SUPORTE (SUAS MENSAGENS) -> direita */
+.mensagem-suporte {
+  align-self: flex-end;
+  background: #3b82f6;
+  border: 1px solid #1e40af;
+  color: white;
+  /* ✅ CORREÇÃO CSS: Adiciona padding no fundo para evitar que o ícone de edição esconda a data */
+  padding-bottom: 30px;
+}
+
+/* ✅ NOVO: Estilo para o botão de edição (flutuante no canto) */
+.chat-edit-btn {
+  /* Retira o botão do fluxo de texto */
+  position: absolute;
+
+  /* Posiciona no canto inferior direito do cartão (ajustando a distância) */
+  bottom: 0px;
+  right: 8px;
+
+  /* Estilo visual */
+  background: none;
+  border: none;
+  color: #fff;
+  /* Cor do ícone */
+  opacity: 0.6;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  /* Para facilitar o clique */
+  transition: opacity 0.2s;
+  z-index: 10;
+  /* Garante que fique acima de outros elementos, se houver */
+}
+
+.chat-edit-btn:hover {
+  opacity: 1;
+}
+
+/* TEXTO */
+.chat-mensagem-card p {
+  margin: 0;
+}
+
+/* ÁUDIO */
+audio {
+  width: 100%;
+  margin-top: 5px;
+  filter: brightness(0.9);
+}
+
+/* DATA */
+.mensagem-data {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 4px;
+  text-align: right;
+}
+
+/* INPUT */
+.chat-input-bar {
+  width: 100%;
+  background: #1e293b;
+  padding: 18px 60px;
+  border-top: 1px solid #243247;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+
+.chat-input-bar input {
+  flex: 1;
+  height: 52px;
+  background: #0f172a;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  padding-left: 14px;
+  color: white;
+  font-size: 15px;
+}
+
+.chat-input-bar input::placeholder {
+  color: #64748b;
+}
+
+.chat-send-btn {
+  width: 55px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #3b82f6;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chat-send-btn:hover {
+  background: #1e293b;
+}
+
+.chat-edit-btn img{
+  height: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .chat-body {
+    padding: 30px 20px;
+  }
+
+  .chat-mensagem-card {
+    max-width: 90%;
+  }
+
+  .chat-input-bar {
+    padding: 15px 20px;
+  }
+}

@@ -1,0 +1,168 @@
+/* Fundo geral */
+.pagamento-container {
+  background-color: #0b1440; /* azul escuro principal */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #0b1440;
+}
+
+/* Header superior */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #091034;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.header-left img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-right i {
+  color: #ff7a00;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Área principal com camadas de fundo */
+.pagamento-content {
+  flex: 1;
+  width: 100%;
+  background: linear-gradient(to bottom, #a3b5ff, #c6d4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/* Card branco principal */
+.pagamento-card {
+  background-color: white;
+  border-radius: 20px;
+  width: 700px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Título */
+.pagamento-card h1 {
+  color: #0b1440;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #0b1440;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Botão de voltar */
+.voltar {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    background-color: transparent;
+    border: 2px solid #ff7a00;
+    color: #ff7a00;
+    border-radius: 50%;
+    width: 34px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.3s;
+}
+
+.voltar img {
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+
+.voltar:hover {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.opcoes-pagamento img {
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.opcao {
+  background-color: #f0f3ff;
+  border-radius: 12px;
+  width: 150px;          /* ← tamanho fixo do card */
+  height: 120px;         /* ← altura padronizada */
+  display: flex;         /* ← centraliza a imagem */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.opcao img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.opcoes-pagamento .opcao img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+.opcao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(11, 20, 64, 0.2);
+}
+
+/* Botão confirmar */
+.btn-confirmar {
+  background-color: #ff7a00;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao{
+  width: 200px;
+  border-radius: 40px;
+}

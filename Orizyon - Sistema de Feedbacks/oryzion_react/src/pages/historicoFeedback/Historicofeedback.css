@@ -1,0 +1,19 @@
+.listagens_historico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.voltaBotao {
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+.HistoricoFeedback {
+  height: calc(100vh - 90px - 160px - 61.6px);
+}
+

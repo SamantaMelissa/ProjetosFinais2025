@@ -1,0 +1,198 @@
+main {
+    background-color: black;
+}
+
+.banner-home {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner-home img {
+    width: 1000px;
+    height: 650px;
+    margin-left: 170px;
+}
+
+.container_home {
+    background-image: url("../../assets/img/Ellipse22.svg");
+    background-size: 600px;
+    background-position: -350px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.campo_home {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campo_paragrafo {
+    border-radius: 20px 0 0 20px;
+    background-color: #74747440;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.campo_paragrafo p {
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+}
+
+.campo_img {
+    border-radius: 0 20px 20px 0;
+    background-color: #74747450;
+}
+
+
+.fundo_home {
+    width: 100%;
+    /* opacity: 25%; */
+}
+
+.campo_home img {
+    height: 300px;
+    border-radius: 20px;
+    max-width: none;
+}
+
+.campo_home p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.ferramentas {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+/* .fundo_ferramentas {
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+} */
+
+.container_ferramentas {
+    background-image: url("../../assets/img/Ellipse22.svg");
+    background-size: 600px;
+    background-position: 1100px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo_ferramentas {
+    border-radius: 20px 0 0 20px;
+    background-color: #74747440;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 70%;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.fundo_ferramentas h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* .ferramentas_titulo h1{
+    margin-top: 15px;
+} */
+
+.carrosel_d_ferramentas carousel{
+    margin-bottom: 15px;
+}
+
+.titulo h1 {
+    color: white;
+    text-align: center;
+}
+
+.icons_ferramentas {
+    display: flex;
+}
+
+.icons_ferramentas img {
+    width: 110px;
+    height: 110px;
+    padding-right: 40px;
+   
+}
+
+.carrosel_ferramentas {
+ margin-bottom: 30px;
+}
+
+.carrosel_ferramentas {
+    margin-bottom: 30px;
+    margin-left: 27px;
+    margin-bottom: 70px;
+    margin-right: 27px;
+}
+
+.ferramentas_titulo {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.fundo_ferramentas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrosel_ferramentas {
+    margin-bottom: 30px;
+    margin-left: 27px;
+    margin-bottom: 70px;
+}
+
+.carousel-control-prev {
+    left: 0;
+    margin-left: -20px;
+    margin-bottom: 50px;
+}
+
+.carousel-control-next {
+    left: 200px;
+    margin-bottom: 50px;
+}
+
+
+button.Ferramenta {
+    /* height: 158px; */
+    /* width: 285px; */
+    background-color: #00000000;
+    border: none;
+}

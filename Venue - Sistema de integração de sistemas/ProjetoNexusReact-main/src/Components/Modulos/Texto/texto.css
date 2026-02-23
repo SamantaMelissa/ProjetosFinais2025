@@ -1,0 +1,37 @@
+.curso_texto {
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 20px;
+    height: 1080;
+    width: 720px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.curso_texto_divisoria2{
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao_texto{
+    background-color: #000000 ;
+    color: aliceblue;
+    border: 2px solid #7506e7;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+}
+
+.curso_texto_divisoria{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* text-align: center; */
+    margin-left: 40px;
+}
+.curso_texto_divisoria h2{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}

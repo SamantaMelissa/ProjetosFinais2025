@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(#0C0414, #1B092E, #220C39, #40156B);
+}
+
+/* ====== TÍTULO ====== */
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titulo h1 {
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.titulo hr {
+  width: 180px;
+  border: none;
+  height: 3px;
+  background-color: #B13D7E;
+  border-radius: 10px;
+}
+
+/* ====== IMAGENS DE FUNDO ====== */
+.img_ferramentas {
+  background-image: url(../../assets/img/Ellipse22.png);
+  background-size: 540px;
+  background-position: 1210px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 300px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.img_ferramentas2 {
+  background-image: url(../../assets/img/Ellipse22.png);
+  background-size: 550px;
+  background-position: -350px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 250px 0;
+  margin-top: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* ====== CONTAINER GERAL ====== */
+.section_grafico {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px;
+  width: 100%;
+  max-width: 1500px;
+  flex-wrap: wrap; /* Responsivo */
+  gap: 40px;
+  z-index: 1;
+  position: relative;
+}
+
+/* ====== GRÁFICO DE PIZZA ====== */
+.grafico_1 {
+  width: 500px;
+  height: 420px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(85, 26, 148, 0.05);
+  background: rgba(182, 80, 229, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.4) inset,
+              0 -2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== GRÁFICO DE LINHA ====== */
+.grafico_2 {
+  width: 500px;
+  height: 420px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.4) inset,
+              0 -2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== CARROSSEL ====== */
+.carrossel {
+  width: 140px;
+  height: 420px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(85, 26, 148, 0.05);
+  background: rgba(182, 80, 229, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.4) inset,
+              0 -2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+/* ====== ITENS DO CARROSSEL ====== */
+.imagem_carrossel,
+.imagem_carrossel2 {
+  background-color: #c0bbbb;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.imagem_carrossel img,
+.imagem_carrossel2 img {
+  width: 65px;
+  height: 65px;
+}
+
+/* ====== MAIN ====== */
+.main-grafico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0C0414, #1B092E, #220C39, #40156B);
+  padding-top: 120px;
+  overflow-x: hidden;
+}

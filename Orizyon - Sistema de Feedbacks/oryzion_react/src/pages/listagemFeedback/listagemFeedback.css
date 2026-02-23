@@ -1,0 +1,83 @@
+/* ==============================
+LISTAGEM DE FEEDBACKS
+============================== */
+.listagem_feedbacks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.qtd_feedback {
+  width: 100%;
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  padding-left: 10px;
+}
+
+.listagem_cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+/* ==============================
+PAGINAÇÃO
+============================== */
+.paginacao_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.botao_pagina {
+  background: #fff;
+  color: #444;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botao_pagina:hover {
+  background: #f0f0f0;
+}
+
+.botao_pagina.ativo {
+  background: #5d50e8;
+  color: white;
+  border-color: #5d50e8;
+}
+
+/* ==============================
+RESPONSIVIDADE
+============================== */
+@media (max-width: 700px) {
+  .qtd_feedback {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+
+  .listagem_cards {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .botao_pagina {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

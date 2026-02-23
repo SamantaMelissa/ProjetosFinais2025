@@ -1,0 +1,174 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.banner_listagem {
+    background-color: #111828;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_cards {
+    width: 100%;
+    max-width: 1400px; 
+    position: relative;
+
+    padding: 0 60px;
+    box-sizing: border-box;
+    margin-top: -50px;
+}
+
+/* ======================= */
+/* CARROSSEL */
+/* ======================= */
+
+.carousel_container {
+    position: absolute;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    left: 50%;
+    
+    width: 100%;
+    max-width: 1300px; /* Container principal que acomoda os 3 cards */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel_inner_feedback {
+    display: flex;
+    gap: 30px; 
+    /* 🛑 IMPORTANTE: Centraliza o grupo de cards, essencial se houver menos de 3 cards */
+    justify-content: center;
+}
+
+/* ======================= */
+/* CARD */
+/* ======================= */
+
+.feedback_card {
+    /* 🛑 CORREÇÃO: Largura ajustada para que 3 cards caibam confortavelmente */
+    width: 390px; 
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
+    /* Impede que o card seja espremido */
+    flex-shrink: 0; 
+}
+
+.avatar_user {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
+.feedback_card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.badge_feedback {
+    padding: 6px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.comentario_feedback {
+    font-size: 15px;
+    color: #5a5a5a;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.link_responder {
+    color: #584EC9;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link_responder:hover {
+    color: #040F1E;
+    transition: 0.2s;
+}
+
+/* ======================= */
+/* BOTÕES */
+/* ======================= */
+
+.carousel_button {
+    position: absolute;
+    background-color: #313D65;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 50%;
+    opacity: 0.85;
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.carousel_button.prev {
+    left: -60px;
+}
+
+.carousel_button.next {
+    right: -60px;
+}
+
+/* ======================= */
+/* DOTS */
+/* ======================= */
+
+.carousel_dots {
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+    height: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #999;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dot.active {
+    background: #5b4bff;
+    width: 14px;
+    height: 14px;
+}

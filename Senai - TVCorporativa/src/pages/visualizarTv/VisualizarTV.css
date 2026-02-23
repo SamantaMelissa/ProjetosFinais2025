@@ -1,0 +1,27 @@
+.main_visualziador{
+    /* height: calc(100vh - 150px); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_visualizador{
+    width: 70%;
+    /* height: 80%; */
+    margin-bottom: 50px;
+}
+
+.campo_visualizador{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.campo_visualizador h1{
+    color: var(--cor-texto);
+   
+}

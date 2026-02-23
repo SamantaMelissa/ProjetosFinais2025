@@ -1,0 +1,9 @@
+.link_cadastro{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bolder;
+    align-self: self-end;
+
+    font-size: 14px;
+}
+

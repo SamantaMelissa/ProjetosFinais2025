@@ -1,0 +1,88 @@
+.listagem {
+    min-height: calc(100vh - (76px + 241px + 33px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    width: 1195px;
+    height: 200px;
+    flex-shrink: 0;
+    padding: 50px;
+
+    border-radius: 8px;
+    border: 0.5px solid rgba(85, 26, 148, 0.05);
+    background: rgba(182, 80, 229, 0.05);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.40) inset, 0 -2px 4px 0 rgba(0, 0, 0, 0.20) inset;
+    backdrop-filter: blur(5px);
+
+}
+
+.listagem h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+
+.tabela {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+.table_cabecalho th {
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.item_lista td {
+    padding: 10px 0;
+
+    font-size: 0.95rem;
+}
+
+
+.btn-editar {
+    height: 22px;
+    filter: invert(60%) sepia(100%) saturate(250%) hue-rotate(90deg);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-excluir {
+    height: 22px;
+    filter: invert(50%) sepia(100%) saturate(400%) hue-rotate(340deg);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-editar:hover,
+.btn-excluir:hover {
+    transform: scale(1.15);
+}
+
+
+/* --------- RESPONSIVO ----------- */
+@media screen and (max-width: 728px) {
+    .tabela {
+        width: 95%;
+        font-size: 0.8rem;
+    }
+
+    .listagem h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-editar,
+    .btn-excluir {
+        height: 18px;
+    }
+}

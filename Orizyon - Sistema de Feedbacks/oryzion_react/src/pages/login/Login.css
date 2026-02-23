@@ -1,0 +1,197 @@
+/* ===== Container ===== */
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #040F1E;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+
+    background-image: 
+        linear-gradient(135deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%),
+        linear-gradient(45deg, rgba(49, 61, 85, 0.4) 0%, transparent 30%);
+}
+
+/* ===== Bordas decorativas iguais ao Chamado ===== */
+.login_container::before,
+.login_container::after {
+    content: '';
+    position: absolute;
+    opacity: 0.3;
+    background-color: #313D65;
+}
+
+.login_container::before {
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 250px;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            #313D65 10px,
+            #313D65 11px),
+        repeating-linear-gradient(-45deg,
+            transparent,
+            transparent 10px,
+            #313D65 10px,
+            #313D65 11px);
+    background-size: 20px 20px;
+    transform: skewX(-20deg) translateX(50px);
+}
+
+.login_container::after {
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background: repeating-linear-gradient(-45deg,
+            transparent,
+            transparent 10px,
+            #313D65 10px,
+            #313D65 11px),
+        repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            #313D65 10px,
+            #313D65 11px);
+    background-size: 20px 20px;
+    transform: skewX(20deg) translateX(-50px);
+}
+
+/* ===== Form ===== */
+.login_form {
+    border: solid 3px #313D65;
+    padding: 50px 60px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.borda {
+    border: 2px solid white;
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    background-image:
+        url('../../assets/img/direita.svg'),
+        url('../../assets/img/esquerda.svg');
+
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+        top 20px right 20px,
+        bottom 20px left 20px;
+
+    background-size: 250px, 250px;
+}
+
+/* ===== Formulário ===== */
+form {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* ===== Logo ===== */
+.login_logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.login_logo img {
+    height: 40px;
+}
+
+/* ===== Campos ===== */
+.login_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.login_campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_campo label {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.login_campo input {
+    padding: 12px 14px;
+    border: 2px solid #313D65;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #040F1E;
+    color: white;
+    transition: border 0.2s ease;
+}
+
+.login_campo input:focus {
+    border-color: #fff;
+}
+
+/* ===== Botão ===== */
+.login_botao button {
+    width: 100%;
+    /* padding: 14px; */
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.login_botao button:hover {
+  background-color: #fff;
+  color: #040F1E;
+  border-color: #fff;
+}
+
+.login_campo.senha {
+    margin-bottom: 20px;
+}
+
+/* ===== Container do input + olho ===== */
+.login_senha_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login_senha_container input {
+    width: 100%;
+}
+
+/* ===== Ícone do olho ===== */
+.login_icone_olho {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: #ffffffa4;
+    transition: 0.2s;
+}
+
+.login_icone_olho:hover {
+    color: #ffffff;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+    .login_form {
+        padding: 35px 25px;
+    }
+
+    .login_logo img {
+        height: 100px;
+    }
+}

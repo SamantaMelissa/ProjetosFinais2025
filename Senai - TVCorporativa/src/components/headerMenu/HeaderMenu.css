@@ -1,0 +1,19 @@
+.header_menu {
+    background: linear-gradient(90deg, #001f9e 0%, #002bce 30%, #9e3f17 100%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100px;
+}
+
+.logo_header_menu {
+    height: 80px;
+}
+ 
+.nav_header_menu a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    margin-right: 20px;
+}

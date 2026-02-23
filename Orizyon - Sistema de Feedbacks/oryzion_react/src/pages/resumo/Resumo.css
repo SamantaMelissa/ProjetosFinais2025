@@ -1,0 +1,102 @@
+/* Container geral */
+.container-resumo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Modal central */
+.modal-resumo {
+  background-color: #dadde9;
+  border-radius: 12px;
+  padding: 40px;
+  width: 600px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Botão de voltar */
+.voltar {
+  align-self: flex-start;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Título */
+.titulo-resumo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222;
+}
+
+/* Caixa de texto */
+.caixa-texto {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsividade */
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+  .modal-resumo {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .titulo-resumo {
+    font-size: 22px;
+  }
+
+  .caixa-texto {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+/* Celulares */
+@media screen and (max-width: 600px) {
+  .modal-resumo {
+    width: 100%;
+    min-height: auto;
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+
+  .voltar {
+    font-size: 13px;
+  }
+
+  .titulo-resumo {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .caixa-texto {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .container-resumo {
+    padding: 10px;
+  }
+}
